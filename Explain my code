@@ -1,0 +1,20 @@
+
+
+1. **TreeNode Class:**
+   The `TreeNode` class represents each node in the binary tree. It has three attributes:
+   - `left`: A reference to the left child node.
+   - `right`: A reference to the right child node.
+   - `val`: The value or key stored in the node.
+
+2. **Insert Function:**
+   The `insert` function is a recursive function that inserts a new node with the given key into the binary tree. If the root node is `None`, it creates a new node and returns it. Otherwise, it recursively traverses the tree based on the key's value and inserts the new node either in the left subtree (if the key is smaller than the root's value) or the right subtree (if the key is larger than the root's value).
+
+3. **In-order Traversal Function:**
+   The `inorder_traversal` function performs an in-order traversal of the binary tree, which means it visits the nodes in the order: left child, root, right child. It uses recursion to traverse the left subtree, then prints the value of the current root node, and finally traverses the right subtree.
+
+4. **Example Usage:**
+   In the example usage section, a binary search tree (BST) is created using the `insert` function. The `keys` list contains values to be inserted into the tree. Each value is inserted into the tree using the `insert` function, and the `root` of the tree is updated accordingly.
+
+   After all values are inserted, the code performs an in-order traversal of the tree using the `inorder_traversal` function, which prints the values of the nodes in ascending order.
+
+Overall, this code demonstrates how to create a binary search tree, insert nodes into it, and perform an in-order traversal to display the nodes in sorted order.
